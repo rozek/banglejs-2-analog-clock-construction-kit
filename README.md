@@ -21,13 +21,20 @@ The typical structure of an analog clock looks as follows:
     size:      require('https://raw.githubusercontent.com/rozek/banglejs-2-smart-clock-size/main/ClockSize.js'),
     background:null,
     face:      require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-fold-face/main/ClockFace.js'),
-    hands:     require('https://raw.githubusercontent.com/rozek/banglejs-2-rounded-clock-hands/main/ClockHands.js'),
+    hands:     require('https://raw.githubusercontent.com/rozek/banglejs-2-hollow-clock-hands/main/ClockHands.js'),
     complications:{
       b:require('https://raw.githubusercontent.com/rozek/banglejs-2-date-complication/main/Complication.js')
     }
-  },{ withDots:true, seconds:'#FFFF00' });
+  },{ withDots:true, Seconds:'#FFFF00' });
 ```
 
 This code implements the following clock:
 
 ![](simple-clock-example.png)
+
+Basically, the code shown above
+
+* loads some "clock mechanics" (these are responsible for the overall behaviour of a clock, e.g., how often it refreshes the display etc.)
+* loads any desired feature (e.g., a "smart clock size calculation" for a larger clock face, a face with 12 numerals, stylish hollow clock hands and a complication to display the current date
+* configures all these parts and then
+* actually starts the clock.
