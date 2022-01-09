@@ -128,7 +128,13 @@ If no explicit clock face is specified, no face will be drawn.
 
 ## Clock Hands ##
 
-tbd.
+"Clock Hands" actually show the current time by drawing the hands of an analog clock.
+
+They export the following function:
+
+* `draw (Settings, CenterX, CenterY, outerRadius, Hours, Minutes, Seconds)` - draws clock hands for the time given by `Hours`, `Minutes` and `Seconds` as specified by the given `Settings`, centered at `CenterX`,`CenterY`, with a radius less or equal to `outerRadius`. `Seconds` are optional and may be missing - in such a case, no second hand should be drawn.
+
+If no explicit clock hand provider is given, [simple clock hands](https://github.com/rozek/banglejs-2-simple-clock-hands) will be drawn.
 
 ## Complications ##
 
