@@ -100,19 +100,31 @@ ClockMechanics.windUp({
 
 They export the following functions:
 
-* `CenterX()` - returns the optimal x coordinate of the clocks center
-* `CenterY()` - returns the optimal y coordinate of the clocks center
-* `outerRadius()` - returns the largest possible clock radius (assuming that `CenterX()` and `CenterY()` are used)
+* `CenterX ()` - returns the optimal x coordinate of the clocks center
+* `CenterY ()` - returns the optimal y coordinate of the clocks center
+* `outerRadius ()` - returns the largest possible clock radius (assuming that `CenterX()` and `CenterY()` are used)
 
 If no clock size calculator is specified, the [smart lock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces.
 
 ## Clock Backgrounds ##
 
-"Clock Backgrounds" draw 
+"Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
+
+They export the following function
+
+* `draw (Settings)` - draws the clock background as specified in the `Settings`
+
+If no explicit background is specified, the display will be filled either with `Settings.Background` or with the current theme's background color.
 
 ## Clock Faces ##
 
-tbd.
+"Clock Faces" draw the face of an analog clock.
+
+They export the following function:
+
+* `draw (Settings, CenterX, CenterY, outerRadius)` - draws a clock face as specified by the given `Settings`, centered at `CenterX`,`CenterY` and (if round) with a radius less or equal to `outerRadius`
+
+If no explicit clock face is specified, no face will be drawn.
 
 ## Clock Hands ##
 
