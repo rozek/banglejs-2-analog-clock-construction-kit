@@ -34,10 +34,10 @@ This code implements the following clock:
 
 Basically, the code shown above
 
-* loads some "clock mechanics" (these are responsible for the overall behaviour of a clock, e.g., how often it refreshes the display etc.)
+* loads some "clock mechanics" (these are responsible for the overall behaviour of a clock)
 * loads any desired feature (e.g., a "smart clock size calculation" for a larger clock face, a face with 12 numerals, stylish hollow clock hands and a complication to display the current date
 * configures all these parts and then
-* actually starts the clock.
+* actually starts the clock by "winding up" its mechanics.
 
 In this example, no real programming is required - and if anything is missing (or not as you would prefer it), only that part of the clock has actually to be developped.
 
@@ -45,7 +45,7 @@ In this example, no real programming is required - and if anything is missing (o
 
 In the context of this kit, an analog clock consists of the following parts:
 
-* **clock mechanics** define the overall behaviour of a clock (e.g. whether widgets should be shown, when and how often the display should be refreshed, etc.)
+* **clock mechanics** define the overall behaviour of a clock
 * **clock size calculators** compute the space actually available for a clock face when widgets are shown
 * **clock backgrounds** draws a background for the clock
 * **clock faces** draws the clock's face
@@ -75,3 +75,46 @@ Right now, the following clock parts are available:
     * [complication placeholder](https://github.com/rozek/banglejs-2-complication-placeholder) for testing purposes
     * [date](https://github.com/rozek/banglejs-2-date-complication)
 
+## Clock Mechanics ##
+
+"Clock Mechanics" define the overall behaviour of a clock, e.g.
+
+* whether widgets should be shown,
+* whether, how many and where complications may be shown,
+* when and how often the display should be refreshed
+
+```
+let ClockMechanics = require(...);
+ClockMechanics.windUp({
+  size:      <opt. clock size calculator>,
+  background:<opt. clock background>,
+  face:      <opt. clock face>,
+  hands:     <opt. clock face>,
+  complications:{ <opt. set of complications and where to place them> }
+},{ <settings> });
+```
+
+## Clock Size Calculators ##
+
+tbd.
+
+## Clock Backgrounds ##
+
+tbd.
+
+## Clock Faces ##
+
+tbd.
+
+## Clock Hands ##
+
+tbd.
+
+## Complications ##
+
+tbd.
+
+
+## License ##
+
+[MIT License](LICENSE.md)
