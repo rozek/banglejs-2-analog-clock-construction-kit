@@ -96,11 +96,19 @@ ClockMechanics.windUp({
 
 ## Clock Size Calculators ##
 
-tbd.
+"Clock Size Calculator" determine position and radius of an analog clock such that the resulting clock becomes as large as possible even while widgets are being shown.
+
+They export the following functions:
+
+* `CenterX()` - returns the optimal x coordinate of the clocks center
+* `CenterY()` - returns the optimal y coordinate of the clocks center
+* `outerRadius()` - returns the largest possible clock radius (assuming that `CenterX()` and `CenterY()` are used)
+
+If no clock size calculator is specified, the [smart lock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces.
 
 ## Clock Backgrounds ##
 
-tbd.
+"Clock Backgrounds" draw 
 
 ## Clock Faces ##
 
