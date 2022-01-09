@@ -159,7 +159,7 @@ Complications do not necessarily have to be circular - the given `radius` is jus
 
 Indeed, there are two special cases: complications at the
 
-* top positin `t` and those at the
+* top position `t` and those at the
 * bottom position `b`
 
 In these two cases, complications are allowed to cover a horizontal span from `x-3*Radius` to `x+3*Radius` (and the same vertical span as small complications: `y-Radius`...`y+Radius`)
