@@ -138,8 +138,22 @@ If no explicit clock hand provider is given, [simple clock hands](https://github
 
 ## Complications ##
 
-tbd.
+"Complications" are optional tiny displays for additional information such as the current date, the day-of-the week, moon phases, etc.
 
+They export the following function:
+
+*  `draw (x,y, Radius, Settings)` - draws the complication as specified by the given `Settings`, centered at `x`,`y` and with a radius less than or equal `Radius`
+
+Complications do not necessarily have to be circular - the given `radius` is just a hint telling the complication how much space it may occupy.
+
+Indeed, there are two special cases: complications at the
+
+* top positin `t` and those at the
+* bottom position `b`
+
+In these two cases, complications are allowed to cover a horizontal span from `x-3*Radius` to `x+3*Radius` (and the same vertical span as small complications: `y-Radius`...`y+Radius`)
+
+If no complications are specified, no will be drawn.
 
 ## License ##
 
