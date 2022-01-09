@@ -25,7 +25,7 @@ The typical structure of an analog clock looks as follows:
     complications:{
       b:require('https://raw.githubusercontent.com/rozek/banglejs-2-date-complication/main/Complication.js')
     }
-  },{ withDots:true, seconds:'#FFFF00' });
+  },{ withDots:true, Seconds:'#FFFF00' });
 ```
 
 This code implements the following clock:
