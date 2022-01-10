@@ -56,12 +56,12 @@ As you can see, quite often no real programming is required - and if something s
 
 In the context of this kit, an analog clock consists of the following parts:
 
-* **clockworks** (define the overall behaviour of a clock)
-* **clock size calculators** (compute the space a clock may occupy without disturbing any widgets)
-* **clock backgrounds** (draw a background for the clock)
-* **clock faces** (draw the clock's face)
+* a **clockwork** (defines the overall behaviour of a clock)
+* a **clock size calculator** (computes the space a clock may occupy without disturbing any widgets)
+* a **clock background** (draws a background for the clock)
+* a **clock face** (draws the clock's face)
 * **clock hands** (actually display the current time by drawing any clock hands)
-* **complications** (optionally draw additional complications - e.g., to show the current date) 
+* optional **complications** (draw additional complications - e.g., to show the current date) 
 
 ### Already available Parts ###
 
