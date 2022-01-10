@@ -222,6 +222,13 @@ Clockwork.windUp({
 
 "Complications" are optional tiny displays for additional information such as the current date, the current weekday, moon phases, etc.
 
+<table>
+ <tr valign="top">
+   <td align="center"><img src="smallDateComplication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">small Date Complication</a></td>
+   <td align="center"><img src="largeDateComplication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">large Date Complication</a></td>
+ </tr>
+</table>
+
 By default, no complications are drawn.
 
 If you prefer one or multiple complications, just `require` the modules with their implementations and assign them to the key of your clockwork option `complications` which stands for the desired position and size:
