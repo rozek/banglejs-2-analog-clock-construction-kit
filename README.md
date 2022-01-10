@@ -107,7 +107,7 @@ The `complications` object has the following fields (all of them are optional):
 
 ## Clock Size Calculators ##
 
-"Clock Size Calculator" determine position and radius of an analog clock such that the resulting clock becomes as large as possible even while widgets are being shown.
+"Clock Size Calculators" determine position and radius of an analog clock such that the resulting clock becomes as large as possible even while widgets are being shown.
 
 <table>
  <tr valign="top">
@@ -122,7 +122,7 @@ They export the following functions:
 * `CenterY ()` - returns the optimal y coordinate of the clocks center
 * `outerRadius ()` - returns the largest possible clock radius (assuming that `CenterX()` and `CenterY()` are used)
 
-If no clock size calculator is specified, the [smart lock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces (as illustrated by the screenshots shown above).
+If no clock size calculator is specified, the [smart clock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces (as illustrated by the screenshots shown above).
 
 ## Clock Backgrounds ##
 
