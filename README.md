@@ -222,6 +222,13 @@ Clockwork.windUp({
 
 "Complications" are optional tiny displays for additional information such as the current date, the current weekday, moon phases, etc.
 
+<table>
+ <tr valign="top">
+   <td align="center"><img src="smallDateComplication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">small Date Complication</a></td>
+   <td align="center"><img src="largeDateComplication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">large Date Complication</a></td>
+ </tr>
+</table>
+
 By default, no complications are drawn.
 
 If you prefer one or multiple complications, just `require` the modules with their implementations and assign them to the key of your clockwork option `complications` which stands for the desired position and size:
@@ -243,7 +250,25 @@ Complications do not necessarily have to be circular - indeed, complications at 
 
 ### Clockworks ###
 
-(tbw.)
+"Clockworks" define the overall behaviour of a clock, e.g.
+
+* whether widgets should be shown,
+* whether, how many and where complications may be drawn,
+* when and how often the display should be refreshed
+
+They export the following function:
+
+* `windUp (Options, Settings)` - starts the implemented clock as specified by the given `Options` and configured by the given `Settings`
+
+A template for your own clockwork could therefore look as follows:
+
+```
+(function () {
+  exports.windUp = function windUp (Options, Settings) { ... };
+})();
+```
+
+Just use this template to implement your own clock size calculator and publish it in a way that Espruino may `require` it. You may also use the [simple Clockwork](https://github.com/rozek/banglejs-2-simple-clockwork) as code base to start from.
 
 ### Clock Size Calculators ###
 
@@ -265,7 +290,7 @@ A template for your own calculator could therefore look as follows:
 })();
 ```
 
-Just use this template to implement your own clock size calculator and publish it in a way that Espruino may `require` it.
+Just use this template to implement your own clock size calculator and publish it in a way that Espruino may `require` it. You may also use the [simple Clock Size Calculator](https://github.com/rozek/banglejs-2-simple-clock-size) as code base to start from.
 
 ### Clock Backgrounds ###
 
@@ -283,7 +308,7 @@ A template for your own background could therefore look as follows:
 })();
 ```
 
-Just use this template to implement your own clock background and publish it in a way that Espruino may `require` it.
+Just use this template to implement your own clock background and publish it in a way that Espruino may `require` it. You may also use the [Bitmap Clock Background](https://github.com/rozek/banglejs-2-bitmap-clock-background) as code base to start from.
 
 ### Clock Faces ###
 
@@ -301,7 +326,7 @@ A template for your own clock face could therefore look as follows:
 })();
 ```
 
-Just use this template to implement your own clock face and publish it in a way that Espruino may `require` it.
+Just use this template to implement your own clock face and publish it in a way that Espruino may `require` it. You may also use the [twelve-fold Clock Face](https://github.com/rozek/banglejs-2-twelve-fold-clock-face) as code base to start from.
 
 ### Clock Hands ###
 
@@ -321,7 +346,7 @@ A template for your own clock hands could therefore look as follows:
 })();
 ```
 
-Just use this template to implement your own clock hands and publish it in a way that Espruino may `require` it.
+Just use this template to implement your own clock hands and publish it in a way that Espruino may `require` it. You may also use the [simple Clock Hands](https://github.com/rozek/banglejs-2-simple-clock-hands) as code base to start from.
 
 ### Complications ###
 
@@ -339,7 +364,7 @@ A template for your own complication could therefore look as follows:
 })();
 ```
 
-Just use this template to implement your own complication and publish it in a way that Espruino may `require` it.
+Just use this template to implement your own complication and publish it in a way that Espruino may `require` it. You may also use the [Date Complication](https://github.com/rozek/banglejs-2-date-complication) as code base to start from.
 
 Complications do not necessarily have to be circular - the given `radius` is just a hint telling the complication how much space it may occupy.
 
