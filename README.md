@@ -204,6 +204,7 @@ Clockwork.windUp({
    <td align="center"><img src="simpleClockHands.png"><br><a href="https://github.com/rozek/banglejs-2-simple-clock-hands">simple Clock Hands</a></td>
    <td align="center"><img src="roundedClockHands.png"><br><a href="https://github.com/rozek/banglejs-2-rounded-clock-hands">rounded Clock Hands</a></td>
    <td align="center"><img src="hollowClockHands.png"><br><a href="https://github.com/rozek/banglejs-2-hollow-clock-hands">hollow Clock Hands</a></td>
+   <td align="center"><img src="hollowClockHands-filled.png"><br><a href="https://github.com/rozek/banglejs-2-hollow-clock-hands">hollow Clock Hands (filled)</a></td>
  </tr>
 </table>
 
