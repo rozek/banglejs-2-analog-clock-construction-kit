@@ -21,7 +21,7 @@ Clockwork.windUp();
 
 and produces the following clock:
 
-![](minimal-Example.png)
+![](minimalExample.png)
 
 The typical structure of an analog clock looks as follows:
 
