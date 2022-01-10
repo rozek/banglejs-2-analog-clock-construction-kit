@@ -155,6 +155,12 @@ Clockwork.windUp({
 
 "Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
 
+<table>
+ <tr valign="top">
+   <td align="center"><img src="Background.png"><br><a href="https://github.com/rozek/banglejs-2-bitmap-clock-background">Bitmap Background</a></td>
+ </tr>
+</table>
+
 By default, the clock background is filled either with `Settings.Background` or with the current theme's background color.
 
 If you prefer a different background, just `require` the module with your preferred background and assign it to key `background` of your clockwork options:
@@ -169,6 +175,14 @@ Clockwork.windUp({
 ### Clock Faces ###
 
 "Clock Faces" draw the face of an analog clock.
+
+<table>
+ <tr valign="top">
+   <td align="center"><img src="fourfoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-fold-clock-face">Bitmap Background</a></td>
+   <td align="center"><img src="twelvefoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-fold-clock-face">Bitmap Background</a></td>
+   <td align="center"><img src="RainbowClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-rainbow-clock-face">Bitmap Background</a></td>
+ </tr>
+</table>
 
 By default, no clock face is drawn.
 
