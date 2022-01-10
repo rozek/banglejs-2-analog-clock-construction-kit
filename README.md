@@ -127,6 +127,8 @@ The following two screenshots illustrate, how the mentioned keys correlate with 
  </tr>
 </table>
 
+The actually available space for any complication depends on the actual radius of the clock (which itself depends on the clock size calculator used and the visible widgets) and is passed to its drawing function as a value for parameter `Radius`.
+
 ### Clock Size Calculators ###
 
 "Clock Size Calculators" determine position and radius of an analog clock such that the resulting clock becomes as large as possible even while widgets are being shown.
