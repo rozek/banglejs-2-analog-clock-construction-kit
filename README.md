@@ -102,7 +102,7 @@ Clockwork.windUp({
   size:      <opt. clock size calculator>,
   background:<opt. clock background>,
   face:      <opt. clock face>,
-  hands:     <opt. clock face>,
+  hands:     <opt. clock hands>,
   complications:{ <opt. set of complications and where to place them> }
 },{ <settings> });
 ```
