@@ -155,6 +155,12 @@ Clockwork.windUp({
 
 "Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
 
+<table>
+ <tr valign="top">
+   <td align="center"><img src="Background.png"><br><a href="https://github.com/rozek/banglejs-2-bitmap-background">Bitmap Background</a></td>
+ </tr>
+</table>
+
 By default, the clock background is filled either with `Settings.Background` or with the current theme's background color.
 
 If you prefer a different background, just `require` the module with your preferred background and assign it to key `background` of your clockwork options:
