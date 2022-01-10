@@ -19,20 +19,17 @@ let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simp
 Clockwork.windUp();
 ```
 
-and produces the following clock:
+and already produces the following clock:
 
 ![](minimalExample.png)
 
-Normally, however, a more sophisticated and detailled clock is desired.
-
-
-A more typical structure of an analog clock therefore looks as follows:
+Normally, however, a more sophisticated and detailled clock is desired. A more typical structure of an analog clock therefore looks as follows:
 
 ```
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
 
 Clockwork.windUp({
-  size:      require('https://raw.githubusercontent.com/rozek/banglejs-2-smart-clock-size/main/ClockSize.js'),
+  size:      null,
   background:null,
   face:      require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-fold-face/main/ClockFace.js'),
   hands:     require('https://raw.githubusercontent.com/rozek/banglejs-2-hollow-clock-hands/main/ClockHands.js'),
@@ -49,11 +46,11 @@ This code implements the following clock:
 Basically, the code shown above
 
 * loads a "clockwork" (this is responsible for the overall behaviour of a clock)
-* loads any desired feature (e.g., a "smart clock size calculation" for a larger clock face, a face with 12 numerals, stylish hollow clock hands and a complication to display the current date
+* loads any desired feature (e.g., a face with 12 numerals, stylish hollow clock hands and a complication to display the current date
 * configures all these parts and then
 * actually starts the clock by "winding up" its clockwork.
 
-In this example, no real programming is required - and if anything is missing (or not as you would prefer it), only that part of the clock has actually to be developped.
+As you can see, quite often no real programming is required - and if something should missing (or not meet your expectations), only that part of the clock has actually to be developed by yourself.
 
 ## Parts of an Analog Clock ##
 
