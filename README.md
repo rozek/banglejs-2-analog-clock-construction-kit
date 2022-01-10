@@ -119,7 +119,7 @@ The `complications` setting is an object with the following fields (all of them 
 * `b` - bottom edge
 * `br` - bottom right corner
 
-Just assign a complication to any of these keys in order to place it at the position associated with that key. Complications assigned to `tl`, `tr`, `l`, `r`, `bl` or `br` will be allocated a small region only, while complications assigned to `t` or `b` may become a bit larger. However, complications in field `t` will prevent complications if fields `tl` and `tr` from being shown. Similarly, if a complication is assigned to field `b`, fields `bl` and `br` will be ignored.
+Just assign a complication to any of these keys in order to place it at the position that key stands for. Complications assigned to `tl`, `tr`, `l`, `r`, `bl` or `br` will be allocated a small region only, while complications assigned to `t` or `b` may become a bit larger. However, complications in field `t` will prevent complications in fields `tl` and `tr` from being shown. Similarly, if a complication is assigned to field `b`, fields `bl` and `br` will be ignored.
 
 The following two screenshots illustrate, how the mentioned keys correlate with size and position of a complication:
 
