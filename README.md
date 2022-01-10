@@ -178,9 +178,9 @@ Clockwork.windUp({
 
 <table>
  <tr valign="top">
-   <td align="center"><img src="fourfoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-fold-clock-face">Bitmap Background</a></td>
-   <td align="center"><img src="twelvefoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-fold-clock-face">Bitmap Background</a></td>
-   <td align="center"><img src="RainbowClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-rainbow-clock-face">Bitmap Background</a></td>
+   <td align="center"><img src="fourfoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-fold-clock-face">four-fold Clock Face</a></td>
+   <td align="center"><img src="twelvefoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-fold-clock-face">twelve-fold Clock Face</a></td>
+   <td align="center"><img src="RainbowClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-rainbow-clock-face">"Rainbow" Clock Face</a></td>
  </tr>
 </table>
 
@@ -198,6 +198,14 @@ Clockwork.windUp({
 ### Clock Hands ###
 
 "Clock Hands" actually show the current time by drawing the hands of an analog clock.
+
+<table>
+ <tr valign="top">
+   <td align="center"><img src="simpleClockHands.png"><br><a href="https://github.com/rozek/banglejs-2-simple-clock-hands">simple Clock Hands</a></td>
+   <td align="center"><img src="roundedClockHands.png"><br><a href="https://github.com/rozek/banglejs-2-rounded-clock-hands">rounded Clock Hands</a></td>
+   <td align="center"><img src="hollowClockHands.png"><br><a href="https://github.com/rozek/banglejs-2-hollow-clock-hands">hollow Clock Hands</a></td>
+ </tr>
+</table>
 
 By default, [rounded clock hands](https://github.com/rozek/banglejs-2-rounded-clock-hands) are drawn.
 
