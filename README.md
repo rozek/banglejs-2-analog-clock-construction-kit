@@ -15,9 +15,9 @@ As a consequence, people may easily combine already existing (and tested) parts 
 The typical structure of an analog clock looks as follows:
 
 ```
-  let ClockMechanics = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clock-mechanics/main/ClockMechanics.js');
+  let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
 
-  ClockMechanics.windUp({
+  Clockwork.windUp({
     size:      require('https://raw.githubusercontent.com/rozek/banglejs-2-smart-clock-size/main/ClockSize.js'),
     background:null,
     face:      require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-fold-face/main/ClockFace.js'),
@@ -34,10 +34,10 @@ This code implements the following clock:
 
 Basically, the code shown above
 
-* loads some "clock mechanics" (these are responsible for the overall behaviour of a clock)
+* loads a "clockwork" (these are responsible for the overall behaviour of a clock)
 * loads any desired feature (e.g., a "smart clock size calculation" for a larger clock face, a face with 12 numerals, stylish hollow clock hands and a complication to display the current date
 * configures all these parts and then
-* actually starts the clock by "winding up" its mechanics.
+* actually starts the clock by "winding up" its clockwork.
 
 In this example, no real programming is required - and if anything is missing (or not as you would prefer it), only that part of the clock has actually to be developped.
 
@@ -45,7 +45,7 @@ In this example, no real programming is required - and if anything is missing (o
 
 In the context of this kit, an analog clock consists of the following parts:
 
-* **clock mechanics** define the overall behaviour of a clock
+* **clockworks** define the overall behaviour of a clock
 * **clock size calculators** compute the space actually available for a clock face when widgets are shown
 * **clock backgrounds** draws a background for the clock
 * **clock faces** draws the clock's face
@@ -56,8 +56,8 @@ In the context of this kit, an analog clock consists of the following parts:
 
 Right now, the following clock parts are available:
 
-* clock mechanics:
-    * [simple clock mechanics](https://github.com/rozek/banglejs-2-simple-clock-mechanics) with up to 6 complications
+* clockworks:
+    * [simple clockwork](https://github.com/rozek/banglejs-2-simple-clockwork) with up to 6 complications
 * clock size calculations:
     * [simple clock size calculation](https://github.com/rozek/banglejs-2-simple-clock-size)
     * [smart clock size calculation](https://github.com/rozek/banglejs-2-smart-clock-size) - should be combined with "[Widgets on Background](https://github.com/rozek/banglejs-2-widgets-on-background)"
@@ -75,17 +75,17 @@ Right now, the following clock parts are available:
     * [complication placeholder](https://github.com/rozek/banglejs-2-complication-placeholder) for testing purposes
     * [date](https://github.com/rozek/banglejs-2-date-complication)
 
-## Clock Mechanics ##
+## Clockworks ##
 
-"Clock Mechanics" define the overall behaviour of a clock, e.g.
+"Clockworks" define the overall behaviour of a clock, e.g.
 
 * whether widgets should be shown,
 * whether, how many and where complications may be shown,
 * when and how often the display should be refreshed
 
 ```
-let ClockMechanics = require(...);
-ClockMechanics.windUp({
+let Clockwork = require(...);
+Clockwork.windUp({
   size:      <opt. clock size calculator>,
   background:<opt. clock background>,
   face:      <opt. clock face>,
