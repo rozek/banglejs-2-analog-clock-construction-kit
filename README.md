@@ -176,6 +176,14 @@ Clockwork.windUp({
 
 "Clock Faces" draw the face of an analog clock.
 
+<table>
+ <tr valign="top">
+   <td align="center"><img src="fourfoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-fold-clock-face">Bitmap Background</a></td>
+   <td align="center"><img src="twelvefoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-fold-clock-face">Bitmap Background</a></td>
+   <td align="center"><img src="RainbowClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-rainbow-clock-face">Bitmap Background</a></td>
+ </tr>
+</table>
+
 By default, no clock face is drawn.
 
 If you prefer a specific clock face, just `require` the module with your preferred implementation and assign it to key `face` of your clockwork options:
