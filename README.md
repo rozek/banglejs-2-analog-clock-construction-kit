@@ -155,9 +155,7 @@ Clockwork.windUp({
 
 "Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
 
-They export the following function
 
-* `draw (Settings)` - draws the clock background as specified in the `Settings`
 
 If no explicit background is specified, the display will be filled either with `Settings.Background` or with the current theme's background color.
 
@@ -165,9 +163,7 @@ If no explicit background is specified, the display will be filled either with `
 
 "Clock Faces" draw the face of an analog clock.
 
-They export the following function:
 
-* `draw (Settings, CenterX, CenterY, outerRadius)` - draws a clock face as specified by the given `Settings`, centered at `CenterX`,`CenterY` and (if round) with a radius less or equal to `outerRadius`
 
 If no explicit clock face is specified, no face will be drawn.
 
@@ -175,9 +171,7 @@ If no explicit clock face is specified, no face will be drawn.
 
 "Clock Hands" actually show the current time by drawing the hands of an analog clock.
 
-They export the following function:
 
-* `draw (Settings, CenterX, CenterY, outerRadius, Hours, Minutes, Seconds)` - draws clock hands for the time given by `Hours`, `Minutes` and `Seconds` as specified by the given `Settings`, centered at `CenterX`,`CenterY`, with a radius less or equal to `outerRadius`. `Seconds` are optional and may be missing - in such a case, no second hand should be drawn.
 
 If no explicit clock hand provider is given, [simple clock hands](https://github.com/rozek/banglejs-2-simple-clock-hands) will be drawn.
 
@@ -185,18 +179,8 @@ If no explicit clock hand provider is given, [simple clock hands](https://github
 
 "Complications" are optional tiny displays for additional information such as the current date, the day-of-the week, moon phases, etc.
 
-They export the following function:
+Complications do not necessarily have to be circular - indeed, complications at the top position (`t`) or at the bottom position (`b`) are allowed to be three times as wide as others.
 
-*  `draw (x,y, Radius, Settings)` - draws the complication as specified by the given `Settings`, centered at `x`,`y` and with a radius less than or equal `Radius`
-
-Complications do not necessarily have to be circular - the given `radius` is just a hint telling the complication how much space it may occupy.
-
-Indeed, there are two special cases: complications at the
-
-* top position `t` and those at the
-* bottom position `b`
-
-In these two cases, complications are allowed to cover a horizontal span from `x-3*Radius` to `x+3*Radius` (and the same vertical span as small complications: `y-Radius`...`y+Radius`)
 
 If no complications are specified, no will be drawn.
 
@@ -228,11 +212,73 @@ A template for your own calculator could therefore look as follows:
 
 ### Clock Backgrounds ###
 
+"Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
+
+They export the following function
+
+* `draw (Settings)` - draws the clock background as specified in the `Settings`
+
+A template for your own background could therefore look as follows:
+
+```
+(function () {
+  exports.draw = function draw (Settings) { ... };
+})();
+```
+
 ### Clock Faces ###
+
+"Clock Faces" draw the face of an analog clock.
+
+They export the following function:
+
+* `draw (Settings, CenterX, CenterY, outerRadius)` - draws a clock face as specified by the given `Settings`, centered at `CenterX`,`CenterY` and (if round) with a radius less or equal to `outerRadius`
+
+A template for your own clock face could therefore look as follows:
+
+```
+(function () {
+  exports.draw = function draw (Settings, CenterX, CenterY, outerRadius) { ... };
+})();
+```
 
 ### Clock Hands ###
 
+"Clock Hands" actually show the current time by drawing the hands of an analog clock.
+
+They export the following function:
+
+* `draw (Settings, CenterX, CenterY, outerRadius, Hours, Minutes, Seconds)` - draws clock hands for the time given by `Hours`, `Minutes` and `Seconds` as specified by the given `Settings`, centered at `CenterX`,`CenterY`, with a radius less or equal to `outerRadius`. `Seconds` are optional and may be missing - in such a case, no second hand should be drawn.
+
+A template for your own clock hands could therefore look as follows:
+
+```
+(function () {
+  exports.draw = function draw (
+    Settings, CenterX, CenterY, outerRadius, Hours, Minutes, Seconds
+  ) { ... };
+})();
+```
+
 ### Complications ###
+
+"Complications" are optional tiny displays for additional information such as the current date, the day-of-the week, moon phases, etc.
+
+They export the following function:
+
+*  `draw (x,y, Radius, Settings)` - draws the complication as specified by the given `Settings`, centered at `x`,`y` and with a radius less than or equal `Radius`
+
+A template for your own complication could therefore look as follows:
+
+```
+(function () {
+  exports.draw = function draw (x,y, Radius, Settings) { ... };
+})();
+```
+
+Complications do not necessarily have to be circular - the given `radius` is just a hint telling the complication how much space it may occupy.
+
+Indeed, complications at the top position (`t`) or at the bottom position (`b`) are allowed to cover a horizontal span from `x-3*Radius` to `x+3*Radius` (and the same vertical span as small complications: `y-Radius`...`y+Radius`)
 
 ## License ##
 
