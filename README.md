@@ -12,6 +12,17 @@ As a consequence, people may easily combine already existing (and tested) parts 
 
 ## Common Structure of an Analog Clock ##
 
+A minimal example for an analog clock based on the "analog Clock Construction Kit" looks as follows:
+
+```
+let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
+Clockwork.windUp();
+```
+
+and produces the following clock:
+
+![](minimal-Example.png)
+
 The typical structure of an analog clock looks as follows:
 
 ```
