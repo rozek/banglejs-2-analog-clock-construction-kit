@@ -15,17 +15,17 @@ As a consequence, people may easily combine already existing (and tested) parts 
 The typical structure of an analog clock looks as follows:
 
 ```
-  let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
+let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
 
-  Clockwork.windUp({
-    size:      require('https://raw.githubusercontent.com/rozek/banglejs-2-smart-clock-size/main/ClockSize.js'),
-    background:null,
-    face:      require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-fold-face/main/ClockFace.js'),
-    hands:     require('https://raw.githubusercontent.com/rozek/banglejs-2-hollow-clock-hands/main/ClockHands.js'),
-    complications:{
-      b:require('https://raw.githubusercontent.com/rozek/banglejs-2-date-complication/main/Complication.js')
-    }
-  },{ withDots:true, Seconds:'#FFFF00' });
+Clockwork.windUp({
+  size:      require('https://raw.githubusercontent.com/rozek/banglejs-2-smart-clock-size/main/ClockSize.js'),
+  background:null,
+  face:      require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-fold-face/main/ClockFace.js'),
+  hands:     require('https://raw.githubusercontent.com/rozek/banglejs-2-hollow-clock-hands/main/ClockHands.js'),
+  complications:{
+    b:require('https://raw.githubusercontent.com/rozek/banglejs-2-date-complication/main/Complication.js')
+  }
+},{ withDots:true, Seconds:'#FFFF00' });
 ```
 
 This code implements the following clock:
@@ -34,7 +34,7 @@ This code implements the following clock:
 
 Basically, the code shown above
 
-* loads a "clockwork" (these are responsible for the overall behaviour of a clock)
+* loads a "clockwork" (this is responsible for the overall behaviour of a clock)
 * loads any desired feature (e.g., a "smart clock size calculation" for a larger clock face, a face with 12 numerals, stylish hollow clock hands and a complication to display the current date
 * configures all these parts and then
 * actually starts the clock by "winding up" its clockwork.
@@ -109,13 +109,20 @@ The `complications` object has the following fields (all of them are optional):
 
 "Clock Size Calculator" determine position and radius of an analog clock such that the resulting clock becomes as large as possible even while widgets are being shown.
 
+<table>
+ <tr valign="top">
+   <td align="center"><img src="simpleClockSize.png"><br>[simple Clock Size Calculator](https://github.com/rozek/banglejs-2-simple-clock-size)</td>
+   <td align="center"><img src="smartClockSize.png"><br>[smart Clock Size Calculator](https://github.com/rozek/banglejs-2-smart-clock-size)</td>
+ </tr>
+</table>
+
 They export the following functions:
 
 * `CenterX ()` - returns the optimal x coordinate of the clocks center
 * `CenterY ()` - returns the optimal y coordinate of the clocks center
 * `outerRadius ()` - returns the largest possible clock radius (assuming that `CenterX()` and `CenterY()` are used)
 
-If no clock size calculator is specified, the [smart lock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces.
+If no clock size calculator is specified, the [smart lock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces (as illustrated by the screenshots shown above).
 
 ## Clock Backgrounds ##
 
