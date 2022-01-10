@@ -96,14 +96,23 @@ Clockwork.windUp({
 
 The `complications` object has the following fields (all of them are optional):
 
-* `tl` - a complication assigned to this field is place in the top left corner of the complications area
+* `tl` - a complication assigned to this field is placed in the top left corner of the complications area
 * `t` - for complications at the top edge of the available area. If `t` is set, `tl` and `tr` are ignored
-* `tr` - a complication assigned to this field is place in the top right corner of the complications area
+* `tr` - a complication assigned to this field is placed in the top right corner of the complications area
 * `l` - for complications at the left edge of the available area
 * `r` - for complications at the right edge of the available area
-* `bl` - a complication assigned to this field is place in the bottom left corner of the complications area
+* `bl` - a complication assigned to this field is placed in the bottom left corner of the complications area
 * `b` - for complications at the bottom edge of the available area. If `b` is set, `bl` and `br` are ignored
-* `br` - a complication assigned to this field is place in the bottom right corner of the complications area
+* `br` - a complication assigned to this field is placed in the bottom right corner of the complications area
+
+The following two screenshots illustrate, how these keys correlate with size and position of a complication:
+
+<table>
+ <tr valign="top">
+   <td align="center"><img src="smallComplications.png"><br>small complications only</td>
+   <td align="center"><img src="largeComplications.png"><br>small and large complications</td>
+ </tr>
+</table>
 
 ## Clock Size Calculators ##
 
