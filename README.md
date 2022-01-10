@@ -23,7 +23,10 @@ and produces the following clock:
 
 ![](minimalExample.png)
 
-The typical structure of an analog clock looks as follows:
+Normally, however, a more sophisticated and detailled clock is desired.
+
+
+A more typical structure of an analog clock therefore looks as follows:
 
 ```
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
