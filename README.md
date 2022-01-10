@@ -86,7 +86,7 @@ Right now, the following clock part implementations are available:
     * [hollow hands](https://github.com/rozek/banglejs-2-hollow-clock-hands), optionally filled
 * complications:
     * [complication placeholder](https://github.com/rozek/banglejs-2-complication-placeholder) for testing purposes
-    * [date](https://github.com/rozek/banglejs-2-date-complication)
+    * [date display](https://github.com/rozek/banglejs-2-date-complication)
 
 ### Clockworks ###
 
