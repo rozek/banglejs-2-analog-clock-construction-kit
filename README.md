@@ -59,12 +59,12 @@ In this example, no real programming is required - and if anything is missing (o
 
 In the context of this kit, an analog clock consists of the following parts:
 
-* **clockworks** define the overall behaviour of a clock
-* **clock size calculators** compute the space actually available for a clock face when widgets are shown
-* **clock backgrounds** draws a background for the clock
-* **clock faces** draws the clock's face
-* **clock hands** actually displays the time by drawing any clock hands - either with or without a second hand)
-* **complications** optionally draw additional complications (e.g., to show the current date) 
+* **clockworks** (define the overall behaviour of a clock)
+* **clock size calculators** (compute the actual space available for a clock face when widgets are shown)
+* **clock backgrounds** (draw a background for the clock)
+* **clock faces** (draw the clock's face)
+* **clock hands** (actually display the time by drawing any clock hands - either with or without a second hand)
+* **complications** (optionally draw additional complications - e.g., to show the current date) 
 
 ## Already available Parts ##
 
