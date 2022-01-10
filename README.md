@@ -198,11 +198,11 @@ Clockwork.windUp({
 
 ### Complications ###
 
-"Complications" are optional tiny displays for additional information such as the current date, the day-of-the week, moon phases, etc.
+"Complications" are optional tiny displays for additional information such as the current date, the current weekday, moon phases, etc.
 
 By default, no complications are drawn.
 
-If you prefer one or multiple complications, just `require` the modules with their implementation and assign them to the key of your clockwork option `complications` which stands for the desired position and size:
+If you prefer one or multiple complications, just `require` the modules with their implementations and assign them to the key of your clockwork option `complications` which stands for the desired position and size:
 
 ```
 let Clockwork = require(...);
@@ -243,6 +243,8 @@ A template for your own calculator could therefore look as follows:
 })();
 ```
 
+Just use this template to implement your own clock size calculator and publish it in a way that Espruino may `require` it.
+
 ### Clock Backgrounds ###
 
 "Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
@@ -259,6 +261,8 @@ A template for your own background could therefore look as follows:
 })();
 ```
 
+Just use this template to implement your own clock background and publish it in a way that Espruino may `require` it.
+
 ### Clock Faces ###
 
 "Clock Faces" draw the face of an analog clock.
@@ -274,6 +278,8 @@ A template for your own clock face could therefore look as follows:
   exports.draw = function draw (Settings, CenterX, CenterY, outerRadius) { ... };
 })();
 ```
+
+Just use this template to implement your own clock face and publish it in a way that Espruino may `require` it.
 
 ### Clock Hands ###
 
@@ -293,9 +299,11 @@ A template for your own clock hands could therefore look as follows:
 })();
 ```
 
+Just use this template to implement your own clock hands and publish it in a way that Espruino may `require` it.
+
 ### Complications ###
 
-"Complications" are optional tiny displays for additional information such as the current date, the day-of-the week, moon phases, etc.
+"Complications" are optional tiny displays for additional information such as the current date, the current weekday, moon phases, etc.
 
 They export the following function:
 
@@ -308,6 +316,8 @@ A template for your own complication could therefore look as follows:
   exports.draw = function draw (x,y, Radius, Settings) { ... };
 })();
 ```
+
+Just use this template to implement your own complication and publish it in a way that Espruino may `require` it.
 
 Complications do not necessarily have to be circular - the given `radius` is just a hint telling the complication how much space it may occupy.
 
