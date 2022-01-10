@@ -50,7 +50,7 @@ Basically, the code shown above
 * configures all these parts and then
 * actually starts the clock by "winding up" its clockwork.
 
-As you can see, quite often no real programming is required - and if something should missing (or not meet your expectations), only that part of the clock has actually to be developed by yourself.
+As you can see, quite often no real programming is required - and if something should be missing (or not meet your expectations), only that part of the clock has actually to be developed by yourself.
 
 ## Parts of an Analog Clock ##
 
@@ -138,13 +138,20 @@ The following two screenshots illustrate, how the mentioned keys correlate with 
  </tr>
 </table>
 
-They export the following functions:
+By default, the [smart clock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces (as illustrated by the screenshots shown above).
 
-* `CenterX ()` - returns the optimal x coordinate of the clocks center
-* `CenterY ()` - returns the optimal y coordinate of the clocks center
-* `outerRadius ()` - returns the largest possible clock radius (assuming that `CenterX()` and `CenterY()` are used)
+If you prefer a different implementation, just `require` that module and assign it to key `size` of your clockwork options:
 
-If no clock size calculator is specified, the [smart clock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces (as illustrated by the screenshots shown above).
+```
+let Clockwork = require(...);
+Clockwork.windUp({
+  size: require('...'),
+}});
+```
+
+
+
+
 
 ### Clock Backgrounds ###
 
@@ -200,6 +207,14 @@ If no complications are specified, no will be drawn.
 ### Clockworks ###
 
 ### Clock Size Calculators ###
+
+"Clock Size Calculators" determine position and radius of an analog clock such that the resulting clock becomes as large as possible even while widgets are being shown.
+
+They export the following functions:
+
+* `CenterX ()` - returns the optimal x coordinate of the clocks center
+* `CenterY ()` - returns the optimal y coordinate of the clocks center
+* `outerRadius ()` - returns the largest possible clock radius (assuming that `CenterX()` and `CenterY()` are used)
 
 ### Clock Backgrounds ###
 
