@@ -155,34 +155,67 @@ Clockwork.windUp({
 
 "Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
 
+By default, the clock background is filled either with `Settings.Background` or with the current theme's background color.
 
+If you prefer a different background, just `require` the module with your preferred background and assign it to key `background` of your clockwork options:
 
-If no explicit background is specified, the display will be filled either with `Settings.Background` or with the current theme's background color.
+```
+let Clockwork = require(...);
+Clockwork.windUp({
+  background: require('...'),
+}});
+``` 
 
 ### Clock Faces ###
 
 "Clock Faces" draw the face of an analog clock.
 
+By default, no clock face is drawn.
 
+If you prefer a specific clock face, just `require` the module with your preferred implementation and assign it to key `face` of your clockwork options:
 
-If no explicit clock face is specified, no face will be drawn.
+```
+let Clockwork = require(...);
+Clockwork.windUp({
+  face: require('...'),
+}});
+``` 
 
 ### Clock Hands ###
 
 "Clock Hands" actually show the current time by drawing the hands of an analog clock.
 
+By default, [rounded clock hands](https://github.com/rozek/banglejs-2-rounded-clock-hands) are drawn.
 
+If you prefer different clock hands, just `require` the module with your preferred implementation and assign it to key `hands` of your clockwork options:
 
-If no explicit clock hand provider is given, [simple clock hands](https://github.com/rozek/banglejs-2-simple-clock-hands) will be drawn.
+```
+let Clockwork = require(...);
+Clockwork.windUp({
+  hands: require('...'),
+}});
+``` 
 
 ### Complications ###
 
 "Complications" are optional tiny displays for additional information such as the current date, the day-of-the week, moon phases, etc.
 
+By default, no complications are drawn.
+
+If you prefer one or multiple complications, just `require` the modules with their implementation and assign them to the key of your clockwork option `complications` which stands for the desired position and size:
+
+```
+let Clockwork = require(...);
+Clockwork.windUp({
+  complications: {
+    l: require(...),
+    r: require(...),
+    b: require(...)
+  },
+}});
+``` 
+
 Complications do not necessarily have to be circular - indeed, complications at the top position (`t`) or at the bottom position (`b`) are allowed to be three times as wide as others.
-
-
-If no complications are specified, no will be drawn.
 
 ## How to Implement your own Parts ##
 
