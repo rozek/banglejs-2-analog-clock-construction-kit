@@ -10,6 +10,8 @@ This kit tries to simplify development and customization of such clocks by split
 
 As a consequence, people may easily combine already existing (and tested) parts in order to get the desired clock and - if this approach is not already sufficient - to customize or implement only those parts which cannot yet be found elsewhere.
 
+> Just a small note: if you like this module and plan to use it, consider "starring" this repository (you will find the "Star" button on the top right of this page), so that I know which of my repositories to take most care of.
+
 ## Common Structure of an Analog Clock ##
 
 A minimal example for an analog clock based on the "analog Clock Construction Kit" looks as follows:
