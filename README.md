@@ -157,7 +157,7 @@ Clockwork.windUp({
 
 <table>
  <tr valign="top">
-   <td align="center"><img src="Background.png"><br><a href="https://github.com/rozek/banglejs-2-bitmap-background">Bitmap Background</a></td>
+   <td align="center"><img src="Background.png"><br><a href="https://github.com/rozek/banglejs-2-bitmap-clock-background">Bitmap Background</a></td>
  </tr>
 </table>
 
