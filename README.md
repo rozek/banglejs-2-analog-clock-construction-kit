@@ -108,18 +108,20 @@ Clockwork.windUp({
 },{ <settings> });
 ```
 
-The `complications` object has the following fields (all of them are optional):
+The `complications` setting is an object with the following fields (all of them are optional):
 
-* `tl` - a complication assigned to this field is placed in the top left corner of the complications area
-* `t` - for complications at the top edge of the available area. If `t` is set, `tl` and `tr` are ignored
-* `tr` - a complication assigned to this field is placed in the top right corner of the complications area
-* `l` - for complications at the left edge of the available area
-* `r` - for complications at the right edge of the available area
-* `bl` - a complication assigned to this field is placed in the bottom left corner of the complications area
-* `b` - for complications at the bottom edge of the available area. If `b` is set, `bl` and `br` are ignored
-* `br` - a complication assigned to this field is placed in the bottom right corner of the complications area
+* `tl` - top left corner
+* `t` - top edge
+* `tr` - top right corner
+* `l` - left edge
+* `r` - right edge
+* `bl` - bottom left corner
+* `b` - bottom edge
+* `br` - bottom right corner
 
-The following two screenshots illustrate, how these keys correlate with size and position of a complication:
+Just assign a complication to any of these keys in order to place it at the position associated with that key. Complications assigned to `tl`, `tr`, `l`, `r`, `bl` or `br` will be allocated a small region only, while complications assigned to `t` or `b` may become a bit larger. However, complications in field `t` will prevent complications if fields `tl` and `tr` from being shown. Similarly, if a complication is assigned to field `b`, fields `bl` and `br` will be ignored.
+
+The following two screenshots illustrate, how the mentioned keys correlate with size and position of a complication:
 
 <table>
  <tr valign="top">
