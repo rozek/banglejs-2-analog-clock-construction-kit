@@ -271,7 +271,7 @@ A template for your own clockwork could therefore look as follows:
 })();
 ```
 
-Just use this template to implement your own clock size calculator and publish it in a way that Espruino may `require` it. You may also use the [simple Clockwork](https://github.com/rozek/banglejs-2-simple-clockwork) as code base to start from.
+Just use this template to implement your own clockwork and publish it in a way that Espruino may `require` it. You may also use the [simple Clockwork](https://github.com/rozek/banglejs-2-simple-clockwork) as code base to start from.
 
 ### Clock Size Calculators ###
 
