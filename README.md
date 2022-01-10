@@ -65,7 +65,7 @@ In the context of this kit, an analog clock consists of the following parts:
 
 ### Already available Parts ###
 
-Right now, the following clock parts are available:
+Right now, the following clock part implementations are available:
 
 * clockworks:
     * [simple clockwork](https://github.com/rozek/banglejs-2-simple-clockwork) with up to 6 complications
