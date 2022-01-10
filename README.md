@@ -94,7 +94,7 @@ Right now, the following clock parts are available:
 "Clockworks" define the overall behaviour of a clock, e.g.
 
 * whether widgets should be shown,
-* whether, how many and where complications may be shown,
+* whether, how many and where complications may be drawn,
 * when and how often the display should be refreshed
 
 ```
