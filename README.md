@@ -66,7 +66,7 @@ In the context of this kit, an analog clock consists of the following parts:
 * **clock hands** (actually display the current time by drawing any clock hands)
 * **complications** (optionally draw additional complications - e.g., to show the current date) 
 
-## Already available Parts ##
+### Already available Parts ###
 
 Right now, the following clock parts are available:
 
@@ -89,7 +89,7 @@ Right now, the following clock parts are available:
     * [complication placeholder](https://github.com/rozek/banglejs-2-complication-placeholder) for testing purposes
     * [date](https://github.com/rozek/banglejs-2-date-complication)
 
-## Clockworks ##
+### Clockworks ###
 
 "Clockworks" define the overall behaviour of a clock, e.g.
 
@@ -130,7 +130,7 @@ The following two screenshots illustrate, how the mentioned keys correlate with 
  </tr>
 </table>
 
-## Clock Size Calculators ##
+### Clock Size Calculators ###
 
 "Clock Size Calculators" determine position and radius of an analog clock such that the resulting clock becomes as large as possible even while widgets are being shown.
 
@@ -149,7 +149,7 @@ They export the following functions:
 
 If no clock size calculator is specified, the [smart clock size calculator](https://github.com/rozek/banglejs-2-smart-clock-size) is used as it often leads to larger clock faces (as illustrated by the screenshots shown above).
 
-## Clock Backgrounds ##
+### Clock Backgrounds ###
 
 "Clock Backgrounds" draw a background for the clock (covering the full display, regardless what the "clock size calculator" returns for the clock itself).
 
@@ -159,7 +159,7 @@ They export the following function
 
 If no explicit background is specified, the display will be filled either with `Settings.Background` or with the current theme's background color.
 
-## Clock Faces ##
+### Clock Faces ###
 
 "Clock Faces" draw the face of an analog clock.
 
@@ -169,7 +169,7 @@ They export the following function:
 
 If no explicit clock face is specified, no face will be drawn.
 
-## Clock Hands ##
+### Clock Hands ###
 
 "Clock Hands" actually show the current time by drawing the hands of an analog clock.
 
@@ -179,7 +179,7 @@ They export the following function:
 
 If no explicit clock hand provider is given, [simple clock hands](https://github.com/rozek/banglejs-2-simple-clock-hands) will be drawn.
 
-## Complications ##
+### Complications ###
 
 "Complications" are optional tiny displays for additional information such as the current date, the day-of-the week, moon phases, etc.
 
@@ -197,6 +197,20 @@ Indeed, there are two special cases: complications at the
 In these two cases, complications are allowed to cover a horizontal span from `x-3*Radius` to `x+3*Radius` (and the same vertical span as small complications: `y-Radius`...`y+Radius`)
 
 If no complications are specified, no will be drawn.
+
+## How to Implement your own Parts ##
+
+### Clockworks ###
+
+### Clock Size Calculators ###
+
+### Clock Backgrounds ###
+
+### Clock Faces ###
+
+### Clock Hands ###
+
+### Complications ###
 
 ## License ##
 
