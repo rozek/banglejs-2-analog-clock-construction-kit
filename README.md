@@ -111,8 +111,8 @@ The `complications` object has the following fields (all of them are optional):
 
 <table>
  <tr valign="top">
-   <td align="center"><img src="simpleClockSize.png"><br>[simple Clock Size Calculator](https://github.com/rozek/banglejs-2-simple-clock-size)</td>
-   <td align="center"><img src="smartClockSize.png"><br>[smart Clock Size Calculator](https://github.com/rozek/banglejs-2-smart-clock-size)</td>
+   <td align="center"><img src="simpleClockSize.png"><br><a href="https://github.com/rozek/banglejs-2-simple-clock-size">simple Clock Size Calculator</a></td>
+   <td align="center"><img src="smartClockSize.png"><br><a href="https://github.com/rozek/banglejs-2-smart-clock-size">smart Clock Size Calculator</a></td>
  </tr>
 </table>
 
