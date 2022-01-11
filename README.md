@@ -89,7 +89,7 @@ Right now, the following clock part implementations are available:
     * [date complication](https://github.com/rozek/banglejs-2-date-complication)
     * [weekday complication](https://github.com/rozek/banglejs-2-weekday-complication)
     * [calendar week complication](https://github.com/rozek/banglejs-2-calendar-week-complication)
-    * moon phase complication
+    * [moon phase complication](https://github.com/rozek/banglejs-2-moon-phase-complication)
 
 Additionally, there are some modules which may be useful when implementing your own parts:
 
