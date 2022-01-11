@@ -235,10 +235,18 @@ Clockwork.windUp({
 
 "Complications" are optional tiny displays for additional information such as the current date, the current weekday, moon phases, etc.
 
+The following screenshot shows a clock with many different complications:
+
+![](manyComplications.png)
+
+And here are individual examples for various complications:
+
 <table>
  <tr valign="top">
-   <td align="center"><img src="smallDateComplication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">small Date Complication</a></td>
-   <td align="center"><img src="largeDateComplication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">large Date Complication</a></td>
+   <td align="center"><img src="Date-Complication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">Date Complication</a></td>
+   <td align="center"><img src="Weekday-Complication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">Weekday Complication</a></td>
+   <td align="center"><img src="Calendarweek-Complication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">Calendarweek Complication</a></td>
+   <td align="center"><img src="Moonphase-Complication.png"><br><a href="https://github.com/rozek/banglejs-2-date-complication">Moonphase Complication</a></td>
  </tr>
 </table>
 
