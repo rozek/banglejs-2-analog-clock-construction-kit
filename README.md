@@ -86,7 +86,17 @@ Right now, the following clock part implementations are available:
     * [hollow hands](https://github.com/rozek/banglejs-2-hollow-clock-hands), optionally filled
 * complications:
     * [complication placeholder](https://github.com/rozek/banglejs-2-complication-placeholder) for testing purposes
-    * [date display](https://github.com/rozek/banglejs-2-date-complication)
+    * [date complication](https://github.com/rozek/banglejs-2-date-complication)
+    * day-of-week complication
+    * calendar week complication
+    * moon phase complication
+
+Additionally, there are some modules which may be useful when implementing your own parts:
+
+* [Widgets on Background](https://github.com/rozek/banglejs-2-widgets-on-background) -
+* [g.drawRoundRect](https://github.com/rozek/banglejs-2-drawroundrect) - draws a (hollow) rectangöe with roudned corners
+* [g.fillRoundRect](https://github.com/rozek/banglejs-2-fillroundrect) - draws a filled rectangöe with roudned corners
+* [g.fillRing](https://github.com/rozek/banglejs-2-fillring) - draws a filled ring
 
 ### Clockworks ###
 
