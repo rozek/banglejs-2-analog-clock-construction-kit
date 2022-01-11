@@ -85,7 +85,7 @@ Right now, the following clock part implementations are available:
     * [rounded clock hands](https://github.com/rozek/banglejs-2-rounded-clock-hands)
     * [hollow clock hands](https://github.com/rozek/banglejs-2-hollow-clock-hands), optionally filled
 * complications:
-    * [complication placeholder](https://github.com/rozek/banglejs-2-complication-placeholder) for testing purposes
+    * [complication placeholder](https://github.com/rozek/banglejs-2-complication-placeholder) (for testing purposes)
     * [date complication](https://github.com/rozek/banglejs-2-date-complication)
     * [weekday complication](https://github.com/rozek/banglejs-2-weekday-complication)
     * [calendar week complication](https://github.com/rozek/banglejs-2-calendar-week-complication)
