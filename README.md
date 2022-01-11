@@ -77,7 +77,7 @@ Right now, the following clock part implementations are available:
 * clock backgrounds:
     * [bitmap background](https://github.com/rozek/banglejs-2-bitmap-clock-background) - should be combined with "[Widgets on Background](https://github.com/rozek/banglejs-2-widgets-on-background)"
 * clock faces:
-    * [clock face with numbers 3, 6, 9 and 12](https://github.com/rozek/banglejs-2-four-fold-clock-face)
+    * [clock face with numbers 3, 6, 9 and 12](https://github.com/rozek/banglejs-2-four-fold-clock-face) (opt. with roman numerals)
     * [clock face with numbers 1...12](https://github.com/rozek/banglejs-2-twelve-fold-clock-face)
     * [clock face with numbers 1...12 in "rainbow" colors](https://github.com/rozek/banglejs-2-rainbow-clock-face)
 * clock hands:
