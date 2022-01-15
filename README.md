@@ -14,7 +14,7 @@ As a consequence, people may easily combine already existing (and tested) parts 
 
 ## Common Structure of an Analog Clock ##
 
-A minimal example for an analog clock based on the "analog Clock Construction Kit" looks as follows:
+A minimal example for an analog clock based on the "analog Clock Const-numberedruction Kit" looks as follows:
 
 ```
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
@@ -33,7 +33,7 @@ let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simp
 Clockwork.windUp({
   size:      null,
   background:null,
-  face:      require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-fold-face/main/ClockFace.js'),
+  face:      require('https://raw.githubusercontent.com/rozek/banglejs-2-twelve-numbered-face/main/ClockFace.js'),
   hands:     require('https://raw.githubusercontent.com/rozek/banglejs-2-hollow-clock-hands/main/ClockHands.js'),
   complications:{
     b:require('https://raw.githubusercontent.com/rozek/banglejs-2-date-complication/main/Complication.js')
@@ -77,8 +77,8 @@ Right now, the following clock part implementations are available:
 * clock backgrounds:
     * [bitmap background](https://github.com/rozek/banglejs-2-bitmap-clock-background) - should be combined with "[Widgets on Background](https://github.com/rozek/banglejs-2-widgets-on-background)"
 * clock faces:
-    * [clock face with numbers 3, 6, 9 and 12](https://github.com/rozek/banglejs-2-four-fold-clock-face) (opt. with roman numerals)
-    * [clock face with numbers 1...12](https://github.com/rozek/banglejs-2-twelve-fold-clock-face)
+    * [clock face with numbers 3, 6, 9 and 12](https://github.com/rozek/banglejs-2-four-numbered-clock-face) (opt. with roman numerals)
+    * [clock face with numbers 1...12](https://github.com/rozek/banglejs-2-twelve-numbered-clock-face)
     * [clock face with numbers 1...12 in "rainbow" colors](https://github.com/rozek/banglejs-2-rainbow-clock-face)
 * clock hands:
     * [simple clock hands](https://github.com/rozek/banglejs-2-simple-clock-hands)
@@ -190,8 +190,8 @@ Clockwork.windUp({
 
 <table>
  <tr valign="top">
-   <td align="center"><img src="fourfoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-fold-clock-face">four-fold Clock Face</a></td>
-   <td align="center"><img src="twelvefoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-fold-clock-face">twelve-fold Clock Face</a></td>
+   <td align="center"><img src="fourfoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-numbered-clock-face">four-numbered Clock Face</a></td>
+   <td align="center"><img src="twelvefoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-numbered-clock-face">twelve-numbered Clock Face</a></td>
    <td align="center"><img src="RainbowClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-rainbow-clock-face">"Rainbow" Clock Face</a></td>
  </tr>
 </table>
@@ -347,7 +347,7 @@ A template for your own clock face could therefore look as follows:
 })();
 ```
 
-Just use this template to implement your own clock face and publish it in a way that Espruino may `require` it. You may also use the [twelve-fold Clock Face](https://github.com/rozek/banglejs-2-twelve-fold-clock-face) as code base to start from.
+Just use this template to implement your own clock face and publish it in a way that Espruino may `require` it. You may also use the [twelve-numbered Clock Face](https://github.com/rozek/banglejs-2-twelve-numbered-clock-face) as code base to start from.
 
 ### Clock Hands ###
 
