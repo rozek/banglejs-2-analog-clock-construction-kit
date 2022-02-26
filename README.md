@@ -190,8 +190,8 @@ Clockwork.windUp({
 
 <table>
  <tr valign="top">
-   <td align="center"><img src="fourfoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-numbered-clock-face">four-numbered Clock Face</a></td>
-   <td align="center"><img src="twelvefoldClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-numbered-clock-face">twelve-numbered Clock Face</a></td>
+   <td align="center"><img src="fourNumberedClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-four-numbered-clock-face">four-numbered Clock Face</a></td>
+   <td align="center"><img src="twelveNumberedClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-twelve-numbered-clock-face">twelve-numbered Clock Face</a></td>
    <td align="center"><img src="RainbowClockFace.png"><br><a href="https://github.com/rozek/banglejs-2-rainbow-clock-face">"Rainbow" Clock Face</a></td>
  </tr>
 </table>
