@@ -16,7 +16,7 @@ As a consequence, people may easily combine already existing (and tested) parts 
 
 A minimal example for an analog clock based on the "analog Clock Const-numberedruction Kit" looks as follows:
 
-```
+```javascript
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
 Clockwork.windUp();
 ```
@@ -27,7 +27,7 @@ and already produces the following clock:
 
 Normally, however, a more sophisticated and detailled clock is desired. A more typical structure of an analog clock therefore looks as follows:
 
-```
+```javascript
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
 
 Clockwork.windUp({
@@ -106,7 +106,7 @@ Additionally, there are some modules which may be useful when implementing your 
 * whether, how many and where complications may be drawn,
 * when and how often the display should be refreshed
 
-```
+```javascript
 let Clockwork = require(...);
 Clockwork.windUp({
   size:      <opt. clock size calculator>,
@@ -156,7 +156,7 @@ By default, the [smart clock size calculator](https://github.com/rozek/banglejs-
 
 If you prefer a different implementation, just `require` that module and assign it to key `size` of your clockwork options:
 
-```
+```javascript
 let Clockwork = require(...);
 Clockwork.windUp({
   size: require('...'),
@@ -177,7 +177,7 @@ By default, the clock background is filled either with `Settings.Background` or 
 
 If you prefer a different background, just `require` the module with your preferred background and assign it to key `background` of your clockwork options:
 
-```
+```javascript
 let Clockwork = require(...);
 Clockwork.windUp({
   background: require('...'),
@@ -200,7 +200,7 @@ By default, no clock face is drawn.
 
 If you prefer a specific clock face, just `require` the module with your preferred implementation and assign it to key `face` of your clockwork options:
 
-```
+```javascript
 let Clockwork = require(...);
 Clockwork.windUp({
   face: require('...'),
@@ -224,7 +224,7 @@ By default, [rounded clock hands](https://github.com/rozek/banglejs-2-rounded-cl
 
 If you prefer different clock hands, just `require` the module with your preferred implementation and assign it to key `hands` of your clockwork options:
 
-```
+```javascript
 let Clockwork = require(...);
 Clockwork.windUp({
   hands: require('...'),
@@ -254,7 +254,7 @@ By default, no complications are drawn.
 
 If you prefer one or multiple complications, just `require` the modules with their implementations and assign them to the key of your clockwork option `complications` which stands for the desired position and size:
 
-```
+```javascript
 let Clockwork = require(...);
 Clockwork.windUp({
   complications: {
@@ -283,7 +283,7 @@ They export the following function:
 
 A template for your own clockwork could therefore look as follows:
 
-```
+```javascript
 (function () {
   exports.windUp = function windUp (Options, Settings) { ... };
 })();
@@ -303,7 +303,7 @@ They export the following functions:
 
 A template for your own calculator could therefore look as follows:
 
-```
+```javascript
 (function () {
   exports.CenterX = function CenterX () { ... };
   exports.CenterY = function CenterY () { ... };
@@ -323,7 +323,7 @@ They export the following function
 
 A template for your own background could therefore look as follows:
 
-```
+```javascript
 (function () {
   exports.draw = function draw (Settings) { ... };
 })();
@@ -341,7 +341,7 @@ They export the following function:
 
 A template for your own clock face could therefore look as follows:
 
-```
+```javascript
 (function () {
   exports.draw = function draw (Settings, CenterX, CenterY, outerRadius) { ... };
 })();
@@ -359,7 +359,7 @@ They export the following function:
 
 A template for your own clock hands could therefore look as follows:
 
-```
+```javascript
 (function () {
   exports.draw = function draw (
     Settings, CenterX, CenterY, outerRadius, Hours, Minutes, Seconds
@@ -379,7 +379,7 @@ They export the following function:
 
 A template for your own complication could therefore look as follows:
 
-```
+```javascript
 (function () {
   exports.draw = function draw (x,y, Radius, Settings) { ... };
 })();
